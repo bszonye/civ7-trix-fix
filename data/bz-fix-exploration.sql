@@ -9,6 +9,9 @@ INSERT INTO Requirements(RequirementId, RequirementType) VALUES
 INSERT INTO RequirementArguments(RequirementId, Name, Value) VALUES
 ('MOD_BZ_DOMAIN_LAND_REQ', 'UnitDomain', 'DOMAIN_LAND');
 
--- fix Ottru so it has UNIT_CLASS_NAVAL in addition to UNIT_CLASS_OTTRU
--- (allows it to benefit from the Hermione Class memento)
+-- Ottru UU: add UNIT_CLASS_NAVAL (in addition to UNIT_CLASS_OTTRU)
+-- for compatibility with bonuses like the Hermione Class memento
 INSERT OR REPLACE INTO TypeTags(Type, Tag) VALUES ('UNIT_OTTRU', 'UNIT_CLASS_NAVAL');
+
+-- Guildhall: add DIPLOMACY tag (for Himiko, High Shaman persona)
+INSERT OR REPLACE INTO TypeTags(Type, Tag) VALUES ('BUILDING_GUILDHALL', 'DIPLOMACY');
