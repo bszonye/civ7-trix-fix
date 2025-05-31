@@ -1,4 +1,4 @@
--- fix Shipbuilding II navy bugs
+-- Shipbuilding mastery: limit modifier to land domain units
 UPDATE Modifiers SET SubjectRequirementSetId='MOD_BZ_DOMAIN_LAND_REQS' WHERE ModifierId='MOD_TECH_OCEAN_TRAVEL_EMBARKED';
 INSERT INTO RequirementSets(RequirementSetId, RequirementSetType) VALUES
 ('MOD_BZ_DOMAIN_LAND_REQS', 'REQUIREMENTSET_TEST_ALL');
