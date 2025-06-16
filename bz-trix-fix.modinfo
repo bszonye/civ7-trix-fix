@@ -34,6 +34,9 @@
                 <UpdateDatabase>
                     <Item>data/bz-fix-always.sql</Item>
                 </UpdateDatabase>
+                <UpdateColors>
+                    <Item>data/bz-playercolors.sql</Item>
+                </UpdateColors>
             </Actions>
         </ActionGroup>
         <ActionGroup id="bz-fix-antiquity" scope="game" criteria="bz-age-antiquity">
