@@ -1,7 +1,11 @@
 INSERT OR REPLACE INTO Colors
 (Type, Color, Color3D) VALUES
 -- city-states
-("PLAYERCOLOR_BZ_MINOR",        "200,192,189,255", "200,192,189,255"), -- #c8c0bd oklch(0.813 0.010  40.0)
+("PLAYERCOLOR_BZ_MINOR_LT",     "200,192,189,255", "200,192,189,255"), -- #c8c0bd oklch(0.813 0.010  40.0)
+("PLAYERCOLOR_BZ_MINOR_MD",     "173,164,160,255", "173,164,160,255"), -- #ada4a0 oklch(0.725 0.012  45.7)
+("COLOR_BZ_BRONZE_LT",          "229,210,172,255", "229,210,172,255"), -- #e5d2ac oklch(0.870 0.055  84.5)
+("COLOR_BZ_BRONZE_MD",          "140,126,98,255",  "140,126,98,255"),  -- #8c7e62 oklch(0.598 0.044  84.5)
+("COLOR_BZ_BRONZE_DK",          "76,71,61,255",    "76,71,61,255"),    -- #4c473d oklch(0.400 0.018  84.6)
 -- Amina
 ("COLOR_BZ_PMS_348C",           "0,132,61,255",    "0,132,61,255"),    -- #00843d oklch(0.536 0.146 150.6)
 ("COLOR_BZ_PMS_355C",           "0,150,57,255",    "0,150,57,255"),    -- #009639 oklch(0.587 0.171 147.7)
@@ -53,10 +57,10 @@ INSERT OR REPLACE INTO Colors
 ("COLOR_BZ_OLIVE",              "254,255,0,255",   "254,255,0,255"),   -- #feff00 oklch(0.97 0.21 110)
 ("COLOR_BZ_APPLE",              "169,255,0,255",   "169,255,0,255"),   -- #a9ff00 oklch(0.91 0.24 130)
 ("COLOR_BZ_GREEN",              "0,255,120,255",   "0,255,120,255"),   -- #00ff78 oklch(0.87 0.24 150)
-("COLOR_BZ_JADE",               "0,255,225,255",   "0,255,225,255"),   -- #00ffe1 oklch(0.90 0.16 170) TODO
-("COLOR_BZ_TEAL",               "0,255,225,255",   "0,255,225,255"),   -- #00ffe1 oklch(0.90 0.16 190) TODO
+("COLOR_BZ_JADE",               "0,255,201,255",   "0,255,201,255"),   -- #00ffc9 oklch(0.89 0.18 170)
+("COLOR_BZ_TEAL",               "0,255,246,255",   "0,255,246,255"),   -- #00fff6 oklch(0.90 0.16 190)
 ("COLOR_BZ_CYAN",               "0,228,255,255",   "0,228,255,255"),   -- #00e4ff oklch(0.84 0.15 210)
-("COLOR_BZ_AZURE",              "0,174,255,255",   "0,174,255,255"),   -- #00aeff oklch(0.72 0.16 230) TODO
+("COLOR_BZ_AZURE",              "0,194,255,255",   "0,194,255,255"),   -- #00c2ff oklch(0.72 0.16 230)
 ("COLOR_BZ_CERULEAN",           "0,174,255,255",   "0,174,255,255"),   -- #00aeff oklch(0.72 0.16 250) TODO
 ("COLOR_BZ_BLUE",               "48,0,255,255",    "48,0,255,255"),    -- #3000ff oklch(0.46 0.30 270)
 ("COLOR_BZ_INDIGO",             "147,0,255,255",   "147,0,255,255"),   -- #9300ff oklch(0.55 0.29 290) TODO
@@ -64,18 +68,19 @@ INSERT OR REPLACE INTO Colors
 ("COLOR_BZ_MAGENTA",            "255,0,247,255",   "255,0,247,255"),   -- #ff00f7 oklch(0.70 0.32 330)
 ("COLOR_BZ_PINK",               "255,0,136,255",   "255,0,136,255"),   -- #ff0088 oklch(0.65 0.26 350) TODO
 -- medium value colors
-("COLOR_BZ_ROSE_MD",            "226,30,122,255",  "226,30,122,255"),  -- #e21e7b oklch(0.60 0.23  10) TODO
-("COLOR_BZ_RED_MD",             "208,32,16,255",   "208,32,16,255"),   -- #d02010 oklch(0.55 0.21  30) TODO
-("COLOR_BZ_ORANGE_MD",          "250,143,25,255",  "250,143,25,255"),  -- #fa8f19 oklch(0.75 0.17  50) TODO
-("COLOR_BZ_AMBER_MD",           "249,143,25,255",  "249,143,25,255"),  -- #fa8f19 oklch(0.75 0.17  70) TODO
-("COLOR_BZ_YELLOW_MD",          "249,199,24,255",  "249,199,24,255"),  -- #f9c718 oklch(0.85 0.17  90) TODO
-("COLOR_BZ_OLIVE_MD",           "135,159,24,255",  "135,159,24,255"),  -- #879f18 oklch(0.66 0.16 110) TODO
-("COLOR_BZ_APPLE_MD",           "134,159,24,255",  "134,159,24,255"),  -- #879f18 oklch(0.66 0.16 130) TODO
-("COLOR_BZ_GREEN_MD",           "30,171,83,255",   "30,171,83,255"),   -- #1eab53 oklch(0.65 0.17 150) TODO
-("COLOR_BZ_JADE_MD",            "36,182,161,255",  "36,182,161,255"),  -- #24b6a1 oklch(0.70 0.12 170) TODO
-("COLOR_BZ_TEAL_MD",            "36,181,161,255",  "36,181,161,255"),  -- #24b6a1 oklch(0.70 0.12 190) TODO
-("COLOR_BZ_CYAN_MD",            "48,194,216,255",  "48,194,216,255"),  -- #30c2d8 oklch(0.75 0.12 210) TODO
-("COLOR_BZ_AZURE_MD",           "32,152,219,255",  "32,152,219,255"),  -- #2098db oklch(0.65 0.14 230) TODO
+-- TODO: adjust values
+("COLOR_BZ_ROSE_MD",            "180,20,74,255",   "180,20,74,255"),   -- #b4144a oklch(0.50 0.19  10)
+("COLOR_BZ_RED_MD",             "208,32,16,255",   "208,32,16,255"),   -- #d02010 oklch(0.55 0.21  30)
+("COLOR_BZ_ORANGE_MD",          "243,117,19,255",  "243,117,19,255"),  -- #f37513 oklch(0.70 0.18  50)
+("COLOR_BZ_AMBER_MD",           "244,159,30,255",  "244,159,30,255"),  -- #f49f1e oklch(0.77 0.16  70)
+("COLOR_BZ_YELLOW_MD",          "249,199,24,255",  "249,199,24,255"),  -- #f9c718 oklch(0.85 0.17  90)
+("COLOR_BZ_OLIVE_MD",           "181,182,20,255",  "181,182,20,255"),  -- #b5b614 oklch(0.75 0.16 110)
+("COLOR_BZ_APPLE_MD",           "107,162,17,255",  "107,162,17,255"),  -- #6ba211 oklch(0.65 0.17 130)
+("COLOR_BZ_GREEN_MD",           "5,137,62,255",    "5,137,62,255"),    -- #05893e oklch(0.55 0.15 150)
+("COLOR_BZ_JADE_MD",            "33,149,118,255",  "33,149,118,255"),  -- #219576 oklch(0.60 0.11 170)
+("COLOR_BZ_TEAL_MD",            "16,164,158,255",  "16,164,158,255"),  -- #10a49e oklch(0.65 0.12 190)
+("COLOR_BZ_CYAN_MD",            "9,178,199,255",   "9,178,199,255"),   -- #09b2c7 oklch(0.70 0.12 210)
+("COLOR_BZ_AZURE_MD",           "37,156,202,255",  "37,156,202,255"),  -- #259cca oklch(0.65 0.12 230)
 ("COLOR_BZ_CERULEAN_MD",        "32,151,219,255",  "32,151,219,255"),  -- #2098db oklch(0.65 0.14 250) TODO
 ("COLOR_BZ_BLUE_MD",            "70,95,234,255",   "70,95,234,255"),   -- #465fea oklch(0.55 0.21 270) TODO
 ("COLOR_BZ_INDIGO_MD",          "161,90,252,255",  "161,90,252,255"),  -- #a15afc oklch(0.63 0.23 290) TODO
@@ -124,7 +129,10 @@ INSERT OR REPLACE INTO Colors
 ("COLOR_STANDARD_WHITE_DK",     "51,51,51,255",    "51,51,51,255"),    -- #333333 oklch(0.321 0.000   0.0)
 ("COLOR_STANDARD_BLACK",        "0,0,0,255",       "0,0,0,255");       -- #000000 oklch(0.000 0.000   0.0)
 -- city-states
-UPDATE PlayerColors SET PrimaryColor   = "PLAYERCOLOR_BZ_MINOR"      WHERE Type = "PLAYERCOLOR_LIGHT_YELLOW_MINOR";
+-- UPDATE PlayerColors SET PrimaryColor   = "PLAYERCOLOR_BZ_MINOR_MD"   WHERE Type = "PLAYERCOLOR_LIGHT_YELLOW_MINOR";
+-- UPDATE PlayerColors SET SecondaryColor = "COLOR_STANDARD_WHITE_LT"   WHERE Type = "PLAYERCOLOR_LIGHT_YELLOW_MINOR";
+UPDATE PlayerColors SET PrimaryColor   = "PLAYERCOLOR_BZ_MINOR_LT"   WHERE Type = "PLAYERCOLOR_LIGHT_YELLOW_MINOR";
+UPDATE PlayerColors SET SecondaryColor = "COLOR_STANDARD_BLACK"      WHERE Type = "PLAYERCOLOR_LIGHT_YELLOW_MINOR";
 -- leaders
 UPDATE PlayerColors SET PrimaryColor   = "COLOR_STANDARD_PURPLE_LT"  WHERE Type = "LEADER_ADA_LOVELACE";
 UPDATE PlayerColors SET SecondaryColor = "COLOR_STANDARD_WHITE_LT"   WHERE Type = "LEADER_ADA_LOVELACE";
