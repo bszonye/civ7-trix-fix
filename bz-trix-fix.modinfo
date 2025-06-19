@@ -42,7 +42,6 @@
             </Properties>
             <Actions>
                 <ImportFiles>
-                    <Item>ui/diplo-ribbon/panel-diplo-ribbon.css</Item>
                     <Item>ui/diplo-ribbon/panel-diplo-ribbon.js</Item>
                 </ImportFiles>
                 <UpdateDatabase>

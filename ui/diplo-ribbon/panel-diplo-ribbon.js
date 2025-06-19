@@ -108,10 +108,10 @@ export class PanelDiploRibbon extends Panel {
     }
     populateFlags() {
         if (InterfaceMode.getCurrent() == "INTERFACEMODE_DIPLOMACY_PROJECT_REACTION" || InterfaceMode.getCurrent() == "INTERFACEMODE_DIPLOMACY_DIALOG" || InterfaceMode.getCurrent() == "INTERFACEMODE_CALL_TO_ARMS") {
-            this.Root.classList.remove("right-24");
+            this.Root.classList.remove(BZ_MARGIN);
         }
         else {
-            this.Root.classList.add("right-24");
+            this.Root.classList.add(BZ_MARGIN);
         }
         if (!this.mainContainer) {
             console.error("panel-diplo-ribbon: Unable to find mainContainer to attach flags to!");
@@ -838,10 +838,11 @@ export class PanelDiploRibbon extends Panel {
         }
     }
 }
+const BZ_MARGIN = 'right-4';
 Controls.define('panel-diplo-ribbon', {
     createInstance: PanelDiploRibbon,
     description: "Houses the players' portraits and stats and start of diplomatic interactions",
-    classNames: ['diplo-ribbon', 'relative', 'allowCameraMovement', 'top-8', 'right-24', 'pointer-events-none'],
+    classNames: ['diplo-ribbon', 'relative', 'allowCameraMovement', 'top-8', BZ_MARGIN, 'pointer-events-none'],
     styles: ['fs://game/base-standard/ui/diplo-ribbon/panel-diplo-ribbon.css'],
     images: ["hud_att_arrow", "hud_att_arrow_highlight"]
 });
