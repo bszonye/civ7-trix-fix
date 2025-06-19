@@ -47,7 +47,7 @@ INSERT OR REPLACE INTO Colors
 -- custom colors
 -- ROSE, RED, ORANGE, AMBER, YELLOW, OLIVE,
 -- APPLE, GREEN, JADE, TEAL, CYAN, AZURE,
--- CERULEAN, BLUE, INDIGO, VIOLET, MAGENTA, PINK
+-- CERULEAN, BLUE, VIOLET, PURPLE, MAGENTA, PINK
 -- fully saturated colors
 ("COLOR_BZ_ROSE",               "255,0,136,255",   "255,0,136,255"),   -- #ff0088 oklch(0.65 0.26  10)
 ("COLOR_BZ_RED",                "255,21,0,255",    "255,21,0,255"),    -- #ff1500 oklch(0.63 0.25  30)
@@ -61,32 +61,31 @@ INSERT OR REPLACE INTO Colors
 ("COLOR_BZ_TEAL",               "0,255,246,255",   "0,255,246,255"),   -- #00fff6 oklch(0.90 0.16 190)
 ("COLOR_BZ_CYAN",               "0,228,255,255",   "0,228,255,255"),   -- #00e4ff oklch(0.84 0.15 210)
 ("COLOR_BZ_AZURE",              "0,194,255,255",   "0,194,255,255"),   -- #00c2ff oklch(0.72 0.16 230)
-("COLOR_BZ_CERULEAN",           "0,174,255,255",   "0,174,255,255"),   -- #00aeff oklch(0.72 0.16 250) TODO
+("COLOR_BZ_CERULEAN",           "0,150,255,255",   "0,150,255,255"),   -- #0096ff oklch(0.66 0.19 250)
 ("COLOR_BZ_BLUE",               "48,0,255,255",    "48,0,255,255"),    -- #3000ff oklch(0.46 0.30 270)
-("COLOR_BZ_INDIGO",             "147,0,255,255",   "147,0,255,255"),   -- #9300ff oklch(0.55 0.29 290) TODO
-("COLOR_BZ_VIOLET",             "147,0,255,255",   "147,0,255,255"),   -- #9300ff oklch(0.55 0.29 310) TODO
+("COLOR_BZ_VIOLET",             "116,0,255,255",   "116,0,255,255"),   -- #7400ff oklch(0.52 0.29 290)
+("COLOR_BZ_PURPLE",             "180,0,255,255",   "180,0,255,255"),   -- #b400ff oklch(0.59 0.30 310)
 ("COLOR_BZ_MAGENTA",            "255,0,247,255",   "255,0,247,255"),   -- #ff00f7 oklch(0.70 0.32 330)
-("COLOR_BZ_PINK",               "255,0,136,255",   "255,0,136,255"),   -- #ff0088 oklch(0.65 0.26 350) TODO
+("COLOR_BZ_PINK",               "255,0,169,255",   "255,0,169,255"),   -- #ff00a9 oklch(0.66 0.28 350)
 -- medium value colors
--- TODO: adjust values
-("COLOR_BZ_ROSE_MD",            "180,20,74,255",   "180,20,74,255"),   -- #b4144a oklch(0.50 0.19  10)
-("COLOR_BZ_RED_MD",             "208,32,16,255",   "208,32,16,255"),   -- #d02010 oklch(0.55 0.21  30)
-("COLOR_BZ_ORANGE_MD",          "243,117,19,255",  "243,117,19,255"),  -- #f37513 oklch(0.70 0.18  50)
-("COLOR_BZ_AMBER_MD",           "244,159,30,255",  "244,159,30,255"),  -- #f49f1e oklch(0.77 0.16  70)
-("COLOR_BZ_YELLOW_MD",          "249,199,24,255",  "249,199,24,255"),  -- #f9c718 oklch(0.85 0.17  90)
-("COLOR_BZ_OLIVE_MD",           "181,182,20,255",  "181,182,20,255"),  -- #b5b614 oklch(0.75 0.16 110)
-("COLOR_BZ_APPLE_MD",           "107,162,17,255",  "107,162,17,255"),  -- #6ba211 oklch(0.65 0.17 130)
-("COLOR_BZ_GREEN_MD",           "5,137,62,255",    "5,137,62,255"),    -- #05893e oklch(0.55 0.15 150)
-("COLOR_BZ_JADE_MD",            "33,149,118,255",  "33,149,118,255"),  -- #219576 oklch(0.60 0.11 170)
-("COLOR_BZ_TEAL_MD",            "16,164,158,255",  "16,164,158,255"),  -- #10a49e oklch(0.65 0.12 190)
-("COLOR_BZ_CYAN_MD",            "9,178,199,255",   "9,178,199,255"),   -- #09b2c7 oklch(0.70 0.12 210)
-("COLOR_BZ_AZURE_MD",           "37,156,202,255",  "37,156,202,255"),  -- #259cca oklch(0.65 0.12 230)
-("COLOR_BZ_CERULEAN_MD",        "32,151,219,255",  "32,151,219,255"),  -- #2098db oklch(0.65 0.14 250) TODO
-("COLOR_BZ_BLUE_MD",            "70,95,234,255",   "70,95,234,255"),   -- #465fea oklch(0.55 0.21 270) TODO
-("COLOR_BZ_INDIGO_MD",          "161,90,252,255",  "161,90,252,255"),  -- #a15afc oklch(0.63 0.23 290) TODO
-("COLOR_BZ_VIOLET_MD",          "161,90,251,255",  "161,90,251,255"),  -- #a15afc oklch(0.63 0.23 310) TODO
-("COLOR_BZ_MAGENTA_MD",         "220,61,213,255",  "220,61,213,255"),  -- #dc3dd5 oklch(0.65 0.25 330) TODO
-("COLOR_BZ_PINK_MD",            "226,30,123,255",  "226,30,123,255"),  -- #e21e7b oklch(0.60 0.23 350) TODO
+("COLOR_BZ_ROSE_MD",            "184,0,73,255",    "184,0,73,255"),    -- #b80049 oklch(0.50 0.20  10)
+("COLOR_BZ_RED_MD",             "212,17,1,255",    "212,17,1,255"),    -- #d41101 oklch(0.55 0.22  30)
+("COLOR_BZ_ORANGE_MD",          "247,114,0,255",   "247,114,0,255"),   -- #f77200 oklch(0.70 0.19  50)
+("COLOR_BZ_AMBER_MD",           "244,159,30,255",  "244,159,30,255"),  -- #f49f1e oklch(0.77 0.16  70) TODO: saturation
+("COLOR_BZ_YELLOW_MD",          "249,199,24,255",  "249,199,24,255"),  -- #f9c718 oklch(0.85 0.17  90) TODO: saturation
+("COLOR_BZ_OLIVE_MD",           "181,182,20,255",  "181,182,20,255"),  -- #b5b614 oklch(0.75 0.16 110) TODO: saturation
+("COLOR_BZ_APPLE_MD",           "107,162,17,255",  "107,162,17,255"),  -- #6ba211 oklch(0.65 0.17 130) TODO: saturation
+("COLOR_BZ_GREEN_MD",           "5,137,62,255",    "5,137,62,255"),    -- #05893e oklch(0.55 0.15 150) TODO: saturation
+("COLOR_BZ_JADE_MD",            "33,149,118,255",  "33,149,118,255"),  -- #219576 oklch(0.60 0.11 170) TODO: saturation
+("COLOR_BZ_TEAL_MD",            "16,164,158,255",  "16,164,158,255"),  -- #10a49e oklch(0.65 0.12 190) TODO: saturation
+("COLOR_BZ_CYAN_MD",            "0,195,219,255",   "0,195,219,255"),   -- #00c3db oklch(0.75 0.13 210)
+("COLOR_BZ_AZURE_MD",           "0,156,207,255",   "0,156,207,255"),   -- #009ccf oklch(0.65 0.13 230)
+("COLOR_BZ_CERULEAN_MD",        "0,116,202,255",   "0,116,202,255"),   -- #0074ca oklch(0.55 0.16 250)
+("COLOR_BZ_BLUE_MD",            "53,67,238,255",   "53,67,238,255"),   -- #3543ee oklch(0.50 0.25 270)
+("COLOR_BZ_VIOLET_MD",          "95,9,210,255",    "95,9,210,255"),    -- #5f09d2 oklch(0.45 0.25 290)
+("COLOR_BZ_PURPLE_MD",          "123,0,177,255",   "123,0,177,255"),   -- #7b00b1 oklch(0.45 0.23 310)
+("COLOR_BZ_MAGENTA_MD",         "188,0,183,255",   "188,0,183,255"),   -- #bc00b7 oklch(0.55 0.26 330)
+("COLOR_BZ_PINK_MD",            "219,37,147,255",  "219,37,147,255"),  -- #db2593 oklch(0.60 0.23 350)
 -- standard colors
 -- RED = 21 28 29
 -- ORANGE = 73 53 56
@@ -227,8 +226,8 @@ UPDATE PlayerColors SET PrimaryColor   = "COLOR_BZ_CYAN_MD"          WHERE Type 
 UPDATE PlayerColors SET PrimaryColor   = "COLOR_BZ_AZURE_MD"         WHERE Type = "LEADER_HIMIKO";
 UPDATE PlayerColors SET PrimaryColor   = "COLOR_BZ_CERULEAN_MD"      WHERE Type = "LEADER_IBN_BATTUTA";
 UPDATE PlayerColors SET PrimaryColor   = "COLOR_BZ_BLUE_MD"          WHERE Type = "LEADER_ISABELLA";
-UPDATE PlayerColors SET PrimaryColor   = "COLOR_BZ_INDIGO_MD"        WHERE Type = "LEADER_JOSE_RIZAL";
-UPDATE PlayerColors SET PrimaryColor   = "COLOR_BZ_VIOLET_MD"        WHERE Type = "LEADER_LAFAYETTE";
+UPDATE PlayerColors SET PrimaryColor   = "COLOR_BZ_VIOLET_MD"        WHERE Type = "LEADER_JOSE_RIZAL";
+UPDATE PlayerColors SET PrimaryColor   = "COLOR_BZ_PURPLE_MD"        WHERE Type = "LEADER_LAFAYETTE";
 UPDATE PlayerColors SET PrimaryColor   = "COLOR_BZ_MAGENTA_MD"       WHERE Type = "LEADER_MACHIAVELLI";
 UPDATE PlayerColors SET PrimaryColor   = "COLOR_BZ_PINK_MD"          WHERE Type = "LEADER_NAPOLEON";
 UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_ROSE"             WHERE Type = "LEADER_ADA_LOVELACE";
@@ -245,7 +244,7 @@ UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_CYAN"             WHERE Type 
 UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_AZURE"            WHERE Type = "LEADER_HIMIKO";
 UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_CERULEAN"         WHERE Type = "LEADER_IBN_BATTUTA";
 UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_BLUE"             WHERE Type = "LEADER_ISABELLA";
-UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_INDIGO"           WHERE Type = "LEADER_JOSE_RIZAL";
-UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_VIOLET"           WHERE Type = "LEADER_LAFAYETTE";
+UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_VIOLET"           WHERE Type = "LEADER_JOSE_RIZAL";
+UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_PURPLE"           WHERE Type = "LEADER_LAFAYETTE";
 UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_MAGENTA"          WHERE Type = "LEADER_MACHIAVELLI";
 UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_PINK"             WHERE Type = "LEADER_NAPOLEON";
