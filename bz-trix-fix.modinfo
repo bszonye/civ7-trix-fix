@@ -26,13 +26,28 @@
         </Criteria>
     </ActionCriteria>
     <ActionGroups>
-        <ActionGroup id="bz-fix-always" scope="game" criteria="always">
+        <ActionGroup id="bz-fix-shell" scope="shell" criteria="always">
             <Properties>
                 <LoadOrder>500</LoadOrder>
             </Properties>
             <Actions>
                 <UpdateDatabase>
+                    <Item>data/bz-fix-shell.xml</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="bz-fix-always" scope="game" criteria="always">
+            <Properties>
+                <LoadOrder>500</LoadOrder>
+            </Properties>
+            <Actions>
+                <ImportFiles>
+                    <Item>ui/diplo-ribbon/panel-diplo-ribbon.css</Item>
+                    <Item>ui/diplo-ribbon/panel-diplo-ribbon.js</Item>
+                </ImportFiles>
+                <UpdateDatabase>
                     <Item>data/bz-fix-always.sql</Item>
+                    <Item>data/bz-fix-always.xml</Item>
                 </UpdateDatabase>
                 <UpdateColors>
                     <Item>data/bz-playercolors.sql</Item>
