@@ -1,5 +1,7 @@
 INSERT OR REPLACE INTO Colors
 (Type, Color, Color3D) VALUES
+-- city-states
+("PLAYERCOLOR_BZ_MINOR",        "200,192,189,255", "200,192,189,255"), -- #c8c0bd oklch(0.813 0.010  40.0)
 -- Amina
 ("COLOR_BZ_PMS_348C",           "0,132,61,255",    "0,132,61,255"),    -- #00843d oklch(0.536 0.146 150.6)
 ("COLOR_BZ_PMS_355C",           "0,150,57,255",    "0,150,57,255"),    -- #009639 oklch(0.587 0.171 147.7)
@@ -121,6 +123,9 @@ INSERT OR REPLACE INTO Colors
 ("COLOR_STANDARD_WHITE_MD",     "113,113,113,255", "113,113,113,255"), -- #717171 oklch(0.549 0.000   0.0)
 ("COLOR_STANDARD_WHITE_DK",     "51,51,51,255",    "51,51,51,255"),    -- #333333 oklch(0.321 0.000   0.0)
 ("COLOR_STANDARD_BLACK",        "0,0,0,255",       "0,0,0,255");       -- #000000 oklch(0.000 0.000   0.0)
+-- city-states
+UPDATE PlayerColors SET PrimaryColor   = "PLAYERCOLOR_BZ_MINOR"      WHERE Type = "PLAYERCOLOR_LIGHT_YELLOW_MINOR";
+-- leaders
 UPDATE PlayerColors SET PrimaryColor   = "COLOR_STANDARD_PURPLE_LT"  WHERE Type = "LEADER_ADA_LOVELACE";
 UPDATE PlayerColors SET SecondaryColor = "COLOR_STANDARD_WHITE_LT"   WHERE Type = "LEADER_ADA_LOVELACE";
 -- UPDATE PlayerColors SET PrimaryColor   = "COLOR_STANDARD_GREEN_DK"   WHERE Type = "LEADER_AMINA";
@@ -236,5 +241,3 @@ UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_INDIGO"           WHERE Type 
 UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_VIOLET"           WHERE Type = "LEADER_LAFAYETTE";
 UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_MAGENTA"          WHERE Type = "LEADER_MACHIAVELLI";
 UPDATE PlayerColors SET SecondaryColor = "COLOR_BZ_PINK"             WHERE Type = "LEADER_NAPOLEON";
-UPDATE PlayerColors SET PrimaryColor   = "COLOR_STANDARD_RED_DK"     WHERE Type = "PLAYERCOLOR_LIGHT_YELLOW_MINOR";
-UPDATE PlayerColors SET SecondaryColor = "COLOR_STANDARD_YELLOW_MD"  WHERE Type = "PLAYERCOLOR_LIGHT_YELLOW_MINOR";
