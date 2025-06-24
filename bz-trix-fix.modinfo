@@ -4,7 +4,7 @@
         <Name>Trixie's Fixes</Name>
         <Version>1.0.0</Version>
         <Description>bugfixes and workarounds for vanilla bugs</Description>
-        <Authors>beezany (curator)</Authors>
+        <Authors>beezany</Authors>
         <Package>Mod</Package>
         <AffectsSavedGames>1</AffectsSavedGames>
     </Properties>
