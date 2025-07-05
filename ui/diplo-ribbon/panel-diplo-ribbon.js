@@ -188,7 +188,7 @@ export class PanelDiploRibbon extends Panel {
         this.Root.classList.toggle("top-8", numShown < 13);
         this.Root.classList.toggle("top-40", 13 <= numShown);
         // backdrop for screenshots
-        // this.Root.classList.add('bg-primary-4', 'h-52');
+        if (BZ_BACKDROP) this.Root.classList.add('bg-primary-4', 'h-52');
         // in diplomacy hub, start off showing whichever leader we selected to get in here
         let inHub = false;
         if (InterfaceMode.isInInterfaceMode("INTERFACEMODE_DIPLOMACY_HUB")) {
@@ -1002,6 +1002,7 @@ export class PanelDiploRibbon extends Panel {
         }
     }
 }
+const BZ_BACKDROP = false;
 const BZ_MAX_LEADERS = 19;
 Controls.define('panel-diplo-ribbon', {
     createInstance: PanelDiploRibbon,
