@@ -995,9 +995,12 @@ export class PanelDiploRibbon extends Panel {
         }
     }
 }
-const BZ_MAX_LEADERS = 19;
-const BZ_TOP = 10 < BZ_MAX_LEADERS ? 'top-40' : 'top-8';
-const BZ_RIGHT = 10 < BZ_MAX_LEADERS ? 'right-10' : 'right-24';
+const BZ_MAX_LEADERS = 12;
+const BZ_TOP = 12 < BZ_MAX_LEADERS ? 'top-40' : 'top-8';
+const BZ_RIGHT =
+    12 < BZ_MAX_LEADERS ? 'right-10' :
+    10 < BZ_MAX_LEADERS ? 'right-4' :
+    'right-24';
 Controls.define('panel-diplo-ribbon', {
     createInstance: PanelDiploRibbon,
     description: "Houses the players' portraits and stats and start of diplomatic interactions",
