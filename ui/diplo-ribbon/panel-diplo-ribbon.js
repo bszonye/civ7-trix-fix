@@ -126,10 +126,10 @@ export class PanelDiploRibbon extends Panel {
     }
     populateFlags() {
         if (InterfaceMode.getCurrent() == "INTERFACEMODE_DIPLOMACY_PROJECT_REACTION" || InterfaceMode.getCurrent() == "INTERFACEMODE_DIPLOMACY_DIALOG" || InterfaceMode.getCurrent() == "INTERFACEMODE_CALL_TO_ARMS") {
-            this.Root.classList.remove(BZ_RIGHT);
+            this.Root.classList.remove("right-24");
         }
         else {
-            this.Root.classList.add(BZ_RIGHT);
+            this.Root.classList.add("right-24");
         }
         if (!this.mainContainer) {
             console.error("panel-diplo-ribbon: Unable to find mainContainer to attach flags to!");
@@ -182,6 +182,13 @@ export class PanelDiploRibbon extends Panel {
         }
         const numShown = Math.min(targetArray.length, this.numLeadersToShow);
         this.diploRibbons = [];
+        // make room for high player counts
+        if (12 <= numShown) this.Root.classList.remove("right-24");
+        this.Root.classList.toggle("right-4", 12 <= numShown);
+        this.Root.classList.toggle("top-8", numShown < 13);
+        this.Root.classList.toggle("top-40", 13 <= numShown);
+        // backdrop for screenshots
+        // this.Root.classList.add('bg-primary-4', 'h-52');
         // in diplomacy hub, start off showing whichever leader we selected to get in here
         let inHub = false;
         if (InterfaceMode.isInInterfaceMode("INTERFACEMODE_DIPLOMACY_HUB")) {
@@ -995,16 +1002,11 @@ export class PanelDiploRibbon extends Panel {
         }
     }
 }
-const BZ_MAX_LEADERS = 12;
-const BZ_TOP = 12 < BZ_MAX_LEADERS ? 'top-40' : 'top-8';
-const BZ_RIGHT =
-    12 < BZ_MAX_LEADERS ? 'right-10' :
-    10 < BZ_MAX_LEADERS ? 'right-4' :
-    'right-24';
+const BZ_MAX_LEADERS = 19;
 Controls.define('panel-diplo-ribbon', {
     createInstance: PanelDiploRibbon,
     description: "Houses the players' portraits and stats and start of diplomatic interactions",
-    classNames: ['diplo-ribbon', 'relative', 'allowCameraMovement', BZ_TOP, BZ_RIGHT, 'pointer-events-none', 'trigger-nav-help'],
+    classNames: ['diplo-ribbon', 'relative', 'allowCameraMovement', 'top-8', 'right-24', 'pointer-events-none', 'trigger-nav-help'],
     styles: ['fs://game/base-standard/ui/diplo-ribbon/panel-diplo-ribbon.css'],
     images: ["hud_att_arrow", "hud_att_arrow_highlight"]
 });
