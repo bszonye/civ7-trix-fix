@@ -44,6 +44,7 @@
                 <ImportFiles>
                     <Item>ui/diplo-ribbon/panel-diplo-ribbon.js</Item>
                     <Item>ui/lenses/lens-manager.js</Item>
+                    <Item>ui/lenses/layer/yields-layer.js</Item>
                 </ImportFiles>
                 <UpdateDatabase>
                     <Item>data/bz-fix-always.sql</Item>
