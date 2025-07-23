@@ -43,6 +43,7 @@
             <Actions>
                 <ImportFiles>
                     <Item>ui/diplo-ribbon/panel-diplo-ribbon.js</Item>
+                    <Item>ui/lenses/lens-manager.js</Item>
                 </ImportFiles>
                 <UpdateDatabase>
                     <Item>data/bz-fix-always.sql</Item>
