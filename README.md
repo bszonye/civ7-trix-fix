@@ -8,7 +8,7 @@ gameplay fixes
 - Inn building: add missing `HAPPINESS` tag
 - Opera House building: add missing `DIPLOMACY` tag
 - Ottru unique unit: add missing `UNIT_CLASS_NAVAL` tag
-- Shawnee: fix unlock rewards
+- Shawnee civilization: fix unlock rewards
 
 user interface fixes
 - lens manager: fix UI scaling for resource class & treasure icons
