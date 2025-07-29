@@ -1,5 +1,5 @@
 # Trixie’s Fixes 1.0.0
-fixes and workarounds for Civilization VII bugs
+fixes and workarounds for game update 1.2.3
 
 ## changes
 gameplay fixes
