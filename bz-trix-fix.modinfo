@@ -3,10 +3,10 @@
     <Properties>
         <Name>Trixie's Fixes</Name>
         <Version>1.0.0</Version>
-        <Description>bugfixes and workarounds for vanilla bugs</Description>
+        <Description>fixes and workarounds for vanilla bugs</Description>
         <Authors>beezany</Authors>
         <Package>Mod</Package>
-        <AffectsSavedGames>1</AffectsSavedGames>
+        <AffectsSavedGames>0</AffectsSavedGames>
     </Properties>
     <Dependencies>
         <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
