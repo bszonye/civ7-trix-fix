@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Mod id="bz-trix-fix" version="10000" xmlns="ModInfo">
     <Properties>
-        <Name>Trixie's Fixes</Name>
+        <Name>LOC_MOD_BZ_TRIX_FIX_NAME</Name>
         <Version>1.0.0</Version>
-        <Description>fixes and workarounds for vanilla bugs</Description>
+        <Description>LOC_MOD_BZ_TRIX_FIX_DESCRIPTION</Description>
         <Authors>beezany</Authors>
         <Package>Mod</Package>
         <AffectsSavedGames>0</AffectsSavedGames>
@@ -45,7 +45,6 @@
             </Properties>
             <Actions>
                 <ImportFiles>
-                    <Item>ui/diplo-ribbon/panel-diplo-ribbon.js</Item>
                     <Item>ui/lenses/lens-manager.js</Item>
                     <Item>ui/lenses/layer/yields-layer.js</Item>
                 </ImportFiles>
@@ -87,5 +86,6 @@
         </ActionGroup>
     </ActionGroups>
     <LocalizedText>
+        <File>text/en_us/ModInfoText.xml</File>
     </LocalizedText>
 </Mod>
