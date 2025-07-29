@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="bz-trix-fix" version="10000" xmlns="ModInfo">
+    <Properties>
+        <Name>LOC_MOD_BZ_TRIX_FIX_NAME</Name>
+        <Version>1.0.0</Version>
+        <Description>LOC_MOD_BZ_TRIX_FIX_DESCRIPTION</Description>
+        <Authors>beezany</Authors>
+        <Package>Mod</Package>
+        <AffectsSavedGames>0</AffectsSavedGames>
+    </Properties>
+    <Dependencies>
+        <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+    </Dependencies>
+    <References>
+        <Mod id="shawnee-tecumseh" title="LOC_MODULE_SHAWNEE_TECUMSEH_NAME" />
+    </References>
+    <ActionCriteria>
+        <Criteria id="always">
+            <AlwaysMet/>
+        </Criteria>
+        <Criteria id="bz-age-antiquity">
+            <AgeInUse>AGE_ANTIQUITY</AgeInUse>
+        </Criteria>
+        <Criteria id="bz-age-exploration">
+            <AgeInUse>AGE_EXPLORATION</AgeInUse>
+        </Criteria>
+        <Criteria id="bz-age-modern">
+            <AgeInUse>AGE_MODERN</AgeInUse>
+        </Criteria>
+    </ActionCriteria>
+    <ActionGroups>
+        <ActionGroup id="bz-fix-shell" scope="shell" criteria="always">
+            <Properties>
+                <LoadOrder>500</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>data/bz-fix-shell.xml</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="bz-fix-always" scope="game" criteria="always">
+            <Properties>
+                <LoadOrder>500</LoadOrder>
+            </Properties>
+            <Actions>
+                <ImportFiles>
+                    <Item>ui/lenses/lens-manager.js</Item>
+                    <Item>ui/lenses/layer/yields-layer.js</Item>
+                </ImportFiles>
+                <UpdateDatabase>
+                    <Item>data/bz-fix-always.sql</Item>
+                    <Item>data/bz-fix-always.xml</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="bz-fix-antiquity" scope="game" criteria="bz-age-antiquity">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>data/bz-fix-antiquity.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="bz-fix-exploration" scope="game" criteria="bz-age-exploration">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>data/bz-fix-exploration.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="bz-fix-modern" scope="game" criteria="bz-age-modern">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>data/bz-fix-modern.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+    </ActionGroups>
+    <LocalizedText>
+        <File>text/en_us/ModInfoText.xml</File>
+    </LocalizedText>
+</Mod>
