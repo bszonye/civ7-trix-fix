@@ -34,9 +34,16 @@
                 <LoadOrder>500</LoadOrder>
             </Properties>
             <Actions>
+                <UIScripts>
+                    <Item>ui/options/editors/bz-editor-keyboard-mapping.js</Item>
+                </UIScripts>
                 <UpdateDatabase>
+                    <Item>config/bz-input.xml</Item>
                     <Item>data/bz-fix-shell.xml</Item>
                 </UpdateDatabase>
+                <UpdateText>
+                    <Item>text/en_us/InGameText.xml</Item>
+                </UpdateText>
             </Actions>
         </ActionGroup>
         <ActionGroup id="bz-fix-always" scope="game" criteria="always">
@@ -44,14 +51,23 @@
                 <LoadOrder>500</LoadOrder>
             </Properties>
             <Actions>
+                <!--
                 <ImportFiles>
                     <Item>ui/lenses/lens-manager.js</Item>
                     <Item>ui/lenses/layer/yields-layer.js</Item>
                 </ImportFiles>
+                -->
+                <UIScripts>
+                    <Item>ui/input/bz-hotkey-manager.js</Item>
+                    <Item>ui/options/editors/bz-editor-keyboard-mapping.js</Item>
+                </UIScripts>
                 <UpdateDatabase>
                     <Item>data/bz-fix-always.sql</Item>
                     <Item>data/bz-fix-always.xml</Item>
                 </UpdateDatabase>
+                <UpdateText>
+                    <Item>text/en_us/InGameText.xml</Item>
+                </UpdateText>
             </Actions>
         </ActionGroup>
         <ActionGroup id="bz-fix-antiquity" scope="game" criteria="bz-age-antiquity">

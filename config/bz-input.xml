@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <InputActions>
+        <Replace ActionId="bz-reload-ui" DeviceType="Keyboard" Name="LOC_UI_KBM_MAPPING_BZ_RELOAD_UI" Description="LOC_UI_KBM_MAPPING_BZ_RELOAD_UI_TT" />
+    </InputActions>
+    <!--
+    <InputContextConstraints>
+        <Replace ActionId="bz-reload-ui" ContextId="World"/>
+        <Replace ActionId="bz-reload-ui" ContextId="Unit"/>
+    </InputContextConstraints>
+    -->
+    <InputActionDefaultGestures>
+        <Replace ActionId="bz-reload-ui" Index="0" GestureType="KBMouse" GestureData="KEY_CONTROL+KEY_R"/>
+    </InputActionDefaultGestures>
+</Database>
