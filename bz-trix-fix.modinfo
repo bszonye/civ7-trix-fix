@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="bz-trix-fix" version="10000" xmlns="ModInfo">
+<Mod id="bz-trix-fix" version="10100" xmlns="ModInfo">
     <Properties>
         <Name>LOC_MOD_BZ_TRIX_FIX_NAME</Name>
-        <Version>1.0.0</Version>
+        <Version>1.1.0</Version>
         <Description>LOC_MOD_BZ_TRIX_FIX_DESCRIPTION</Description>
         <Authors>beezany</Authors>
         <Package>Mod</Package>
@@ -34,9 +34,16 @@
                 <LoadOrder>500</LoadOrder>
             </Properties>
             <Actions>
+                <UIScripts>
+                    <Item>ui/options/editors/bz-editor-keyboard-mapping.js</Item>
+                </UIScripts>
                 <UpdateDatabase>
+                    <Item>config/bz-input.xml</Item>
                     <Item>data/bz-fix-shell.xml</Item>
                 </UpdateDatabase>
+                <UpdateText>
+                    <Item>text/en_us/InGameText.xml</Item>
+                </UpdateText>
             </Actions>
         </ActionGroup>
         <ActionGroup id="bz-fix-always" scope="game" criteria="always">
@@ -44,14 +51,17 @@
                 <LoadOrder>500</LoadOrder>
             </Properties>
             <Actions>
-                <ImportFiles>
-                    <Item>ui/lenses/lens-manager.js</Item>
-                    <Item>ui/lenses/layer/yields-layer.js</Item>
-                </ImportFiles>
+                <UIScripts>
+                    <Item>ui/input/bz-hotkey-manager.js</Item>
+                    <Item>ui/options/editors/bz-editor-keyboard-mapping.js</Item>
+                </UIScripts>
                 <UpdateDatabase>
                     <Item>data/bz-fix-always.sql</Item>
                     <Item>data/bz-fix-always.xml</Item>
                 </UpdateDatabase>
+                <UpdateText>
+                    <Item>text/en_us/InGameText.xml</Item>
+                </UpdateText>
             </Actions>
         </ActionGroup>
         <ActionGroup id="bz-fix-antiquity" scope="game" criteria="bz-age-antiquity">

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <EnglishText>
+        <Replace Tag="LOC_UI_KBM_MAPPING_BZ_RELOAD_UI">
+            <Text>Reload UI</Text>
+        </Replace>
+        <Replace Tag="LOC_UI_KBM_MAPPING_BZ_RELOAD_UI_TT">
+            <Text>Reloads the user interface</Text>
+        </Replace>
+    </EnglishText>
+</Database>
