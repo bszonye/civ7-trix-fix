@@ -52,6 +52,7 @@
             </Properties>
             <Actions>
                 <UIScripts>
+                    <Item>ui/context-manager/bz-context-manager.js</Item>
                     <Item>ui/input/bz-hotkey-manager.js</Item>
                     <Item>ui/options/editors/bz-editor-keyboard-mapping.js</Item>
                 </UIScripts>
