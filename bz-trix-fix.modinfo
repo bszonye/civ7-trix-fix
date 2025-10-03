@@ -71,6 +71,7 @@
             <Actions>
                 <UpdateDatabase>
                     <Item>data/bz-fix-antiquity.sql</Item>
+                    <Item>data/bz-fix-antiquity.xml</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
@@ -81,6 +82,7 @@
             <Actions>
                 <UpdateDatabase>
                     <Item>data/bz-fix-exploration.sql</Item>
+                    <Item>data/bz-fix-exploration.xml</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
@@ -91,6 +93,7 @@
             <Actions>
                 <UpdateDatabase>
                     <Item>data/bz-fix-modern.sql</Item>
+                    <Item>data/bz-fix-modern.xml</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
