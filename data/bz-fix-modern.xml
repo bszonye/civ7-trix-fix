@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
-    <Constructible_WarehouseYields>
-        <Delete ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerFarmFood"/>
-        <Delete ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerFloodplainFeatureFood"/>
-        <Replace ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerReefFeatureFood"/>
-        <Replace ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerColdReefFeatureFood"/>
-        <Replace ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerNavigableRiverFood"/>
-        <Replace ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerDesertFloodplainFeatureFood"/>
-        <Replace ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerGrasslandFloodplainFeatureFood"/>
-        <Replace ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerPlainsFloodplainFeatureFood"/>
-        <Replace ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerTropicalFloodplainFeatureFood"/>
-        <Replace ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerTundraFloodplainFeatureFood"/>
-    </Constructible_WarehouseYields>
     <Warehouse_YieldChanges>
         <Delete ID="GrocerFarmFood" YieldType="YIELD_FOOD" YieldChange="1" ConstructibleInCity="IMPROVEMENT_FARM"/>
-        <Delete ID="GrocerFloodplainFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureClassInCity="FEATURE_CLASS_FLOODPLAIN"/>
-        <Replace ID="GrocerReefFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_REEF"/>
-        <Replace ID="GrocerColdReefFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_COLD_REEF"/>
-        <Replace ID="GrocerNavigableRiverFood" YieldType="YIELD_FOOD" YieldChange="1" NavigableRiverInCity="true"/>
-        <Replace ID="GrocerDesertFloodplainFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_DESERT_FLOODPLAIN_MINOR"/>
-        <Replace ID="GrocerGrasslandFloodplainFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_GRASSLAND_FLOODPLAIN_MINOR"/>
-        <Replace ID="GrocerPlainsFloodplainFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_PLAINS_FLOODPLAIN_MINOR"/>
-        <Replace ID="GrocerTropicalFloodplainFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_TROPICAL_FLOODPLAIN_MINOR"/>
-        <Replace ID="GrocerTundraFloodplainFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_TUNDRA_FLOODPLAIN_MINOR"/>
+        <InsertOrIgnore ID="GrocerReefFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_REEF"/>
+        <InsertOrIgnore ID="GrocerColdReefFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_COLD_REEF"/>
+        <InsertOrIgnore ID="GrocerNavigableRiverFood" YieldType="YIELD_FOOD" YieldChange="1" TerrainInCity="TERRAIN_NAVIGABLE_RIVER"/>
+        <Delete ID="IronworksClayPitProduction" YieldType="YIELD_PRODUCTION" YieldChange="1" ConstructibleInCity="IMPROVEMENT_CLAY_PIT"/>
+        <InsertOrIgnore ID="IronworksWetFeatureProduction" YieldType="YIELD_PRODUCTION" YieldChange="1" FeatureClassInCity="FEATURE_CLASS_WET"/>
     </Warehouse_YieldChanges>
+    <Constructible_WarehouseYields>
+        <Delete ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerFarmFood"/>
+        <InsertOrIgnore ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerReefFeatureFood"/>
+        <InsertOrIgnore ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerColdReefFeatureFood"/>
+        <InsertOrIgnore ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerNavigableRiverFood"/>
+        <Delete ConstructibleType="BUILDING_IRONWORKS" YieldChangeId="IronworksClayPitProduction"/>
+        <InsertOrIgnore ConstructibleType="BUILDING_IRONWORKS" YieldChangeId="IronworksWetFeatureProduction"/>
+    </Constructible_WarehouseYields>
 </Database>
 
