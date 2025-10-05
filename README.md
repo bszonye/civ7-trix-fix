@@ -1,12 +1,10 @@
-# Trixie’s Fixes 1.2.0
-fixes and workarounds for game update 1.2.4
+# Trixie’s Fixes 1.3.0
+fixes and workarounds for game update 1.2.5
 
 ## changes
 gameplay fixes
-- Himiko, High Shaman: fix building tags needed for leader ability
-- Guildhall building: add missing Diplomacy tag
-- Inn building: add missing Happiness tag
-- Opera House building: add missing Diplomacy tag
+- Grocer building: fix double Farm bonus, missing Fishing Boat bonuses
+- Ironworks building: fix unique improvements on Clay Pits
 - Ottru unique unit: add missing Naval unit class
 - Shawnee civilization: fix unlock rewards
 

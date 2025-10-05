@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="bz-trix-fix" version="10200" xmlns="ModInfo">
+<Mod id="bz-trix-fix" version="10300" xmlns="ModInfo">
     <Properties>
         <Name>LOC_MOD_BZ_TRIX_FIX_NAME</Name>
-        <Version>1.2.0</Version>
+        <Version>1.3.0</Version>
         <Description>LOC_MOD_BZ_TRIX_FIX_DESCRIPTION</Description>
         <Authors>beezany</Authors>
         <Package>Mod</Package>
@@ -52,7 +52,6 @@
             </Properties>
             <Actions>
                 <UIScripts>
-                    <Item>ui/context-manager/bz-context-manager.js</Item>
                     <Item>ui/input/bz-hotkey-manager.js</Item>
                     <Item>ui/options/editors/bz-editor-keyboard-mapping.js</Item>
                 </UIScripts>
@@ -72,6 +71,7 @@
             <Actions>
                 <UpdateDatabase>
                     <Item>data/bz-fix-antiquity.sql</Item>
+                    <Item>data/bz-fix-antiquity.xml</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
@@ -82,6 +82,7 @@
             <Actions>
                 <UpdateDatabase>
                     <Item>data/bz-fix-exploration.sql</Item>
+                    <Item>data/bz-fix-exploration.xml</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
@@ -92,6 +93,7 @@
             <Actions>
                 <UpdateDatabase>
                     <Item>data/bz-fix-modern.sql</Item>
+                    <Item>data/bz-fix-modern.xml</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
