@@ -1,20 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
-    <Warehouse_YieldChanges>
-        <Delete ID="GrocerFarmFood" YieldType="YIELD_FOOD" YieldChange="1" ConstructibleInCity="IMPROVEMENT_FARM"/>
-        <InsertOrIgnore ID="GrocerReefFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_REEF"/>
-        <InsertOrIgnore ID="GrocerColdReefFeatureFood" YieldType="YIELD_FOOD" YieldChange="1" FeatureInCity="FEATURE_COLD_REEF"/>
-        <InsertOrIgnore ID="GrocerNavigableRiverFood" YieldType="YIELD_FOOD" YieldChange="1" TerrainInCity="TERRAIN_NAVIGABLE_RIVER"/>
-        <Delete ID="IronworksClayPitProduction" YieldType="YIELD_PRODUCTION" YieldChange="1" ConstructibleInCity="IMPROVEMENT_CLAY_PIT"/>
-        <InsertOrIgnore ID="IronworksWetFeatureProduction" YieldType="YIELD_PRODUCTION" YieldChange="1" FeatureClassInCity="FEATURE_CLASS_WET"/>
-    </Warehouse_YieldChanges>
-    <Constructible_WarehouseYields>
-        <Delete ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerFarmFood"/>
-        <InsertOrIgnore ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerReefFeatureFood"/>
-        <InsertOrIgnore ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerColdReefFeatureFood"/>
-        <InsertOrIgnore ConstructibleType="BUILDING_GROCER" YieldChangeId="GrocerNavigableRiverFood"/>
-        <Delete ConstructibleType="BUILDING_IRONWORKS" YieldChangeId="IronworksClayPitProduction"/>
-        <InsertOrIgnore ConstructibleType="BUILDING_IRONWORKS" YieldChangeId="IronworksWetFeatureProduction"/>
-    </Constructible_WarehouseYields>
 </Database>
 
