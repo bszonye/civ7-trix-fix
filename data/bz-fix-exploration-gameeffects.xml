@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+    <Modifier id="BZ_GREATPERSON_ONE_POPULATION" collection="COLLECTION_OWNER" effect="EFFECT_CITY_ADJUST_POPULATION" run-once="true" permanent="true">
+        <Argument name="Amount">1</Argument>
+    </Modifier>
+</GameEffects>

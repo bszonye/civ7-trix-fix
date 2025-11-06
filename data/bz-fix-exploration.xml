@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
+    <GreatPersonIndividualActionModifiers>
+        <InsertOrIgnore GreatPersonIndividualType="GREAT_PERSON_INDIVIDUAL_ALIM_AL_JAZARI" ModifierId="BZ_GREATPERSON_ONE_POPULATION" AttachmentTargetType="GREAT_PERSON_ACTION_ATTACHMENT_TARGET_DISTRICT_IN_TILE"/>
+    </GreatPersonIndividualActionModifiers>
 </Database>
