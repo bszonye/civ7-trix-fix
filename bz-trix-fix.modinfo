@@ -83,6 +83,7 @@
                 <UpdateDatabase>
                     <Item>data/bz-fix-exploration.sql</Item>
                     <Item>data/bz-fix-exploration.xml</Item>
+                    <Item>data/bz-fix-exploration-gameeffects.xml</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
