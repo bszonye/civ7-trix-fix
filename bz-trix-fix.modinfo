@@ -59,6 +59,9 @@
                     <Item>data/bz-fix-always.sql</Item>
                     <Item>data/bz-fix-always.xml</Item>
                 </UpdateDatabase>
+                <UpdateIcons>
+                    <Item>data/bz-fix-always-icons.xml</Item>
+                </UpdateIcons>
                 <UpdateText>
                     <Item>text/en_us/InGameText.xml</Item>
                 </UpdateText>
