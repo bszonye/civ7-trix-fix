@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <IconDefinitions>
+        <InsertOrIgnore>
+            <ID>IMPROVEMENT_CLAY_PIT_RESOURCE</ID>
+            <Path>blp:impicon_claypit</Path>
+        </InsertOrIgnore>
+    </IconDefinitions>
+</Database>
