@@ -1,5 +1,5 @@
-# Trixie’s Fixes 1.4.1
-fixes and workarounds for game update 1.4.1
+# Trixie’s Fixes 1.4.2
+fixes and workarounds for game update 1.4.2
 
 ## changes
 gameplay fixes
