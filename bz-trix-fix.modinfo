@@ -8,6 +8,7 @@
         <Package>Mod</Package>
         <AffectsSavedGames>0</AffectsSavedGames>
         <bzIcon>blp:ntf_choose_city_production_blk</bzIcon>
+        <bzIconGlow>#a33d29</bzIconGlow>
     </Properties>
     <Dependencies>
         <Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
