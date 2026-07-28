@@ -2,31 +2,28 @@ const BZ_KEYS_TO_ADD = [
     "bz-reload-ui",
 ];
 class bzEditorKeyboardMapping {
-    static c_prototype;
+    static c = null;
     constructor(component) {
-        component.bzComponent = this;
         this.component = component;
-        this.patchPrototypes(this.component);
+        this.component.bzTrixFix = this;
+        this.patchPrototype(Object.getPrototypeOf(component));
     }
-    patchPrototypes(component) {
-        const c_prototype = Object.getPrototypeOf(component);
-        if (bzEditorKeyboardMapping.c_prototype == c_prototype) return;
-        // patch component methods
-        const proto = bzEditorKeyboardMapping.c_prototype = c_prototype;
+    patchPrototype(proto) {
+        if (bzEditorKeyboardMapping.c) return;  // one-time initialization
+        // patch EditorKeyboardMapping methods & properties
+        const c = bzEditorKeyboardMapping.c = { proto };
         // afterAddActionsForContext
-        const afterAddActionsForContext = this.afterAddActionsForContext;
-        const addActionsForContext = proto.addActionsForContext;
-        proto.addActionsForContext = function(...args) {
-            const c_rv = addActionsForContext.apply(this, args);
-            const after_rv = afterAddActionsForContext.apply(this.bzComponent, args);
-            return after_rv ?? c_rv;
+        c.addActionsForContext = c.proto.addActionsForContext;
+        c.proto.addActionsForContext = function(...args) {
+            const crv = c.addActionsForContext.apply(this, args);
+            const arv = this.bzTrixFix.afterAddActionsForContext(...args);
+            return arv ?? crv;
         }
     }
     beforeAttach() { }
     afterAttach() { }
     beforeDetach() { }
     afterDetach() { }
-    onAttributeChanged(_name, _prev, _next) { }
     afterAddActionsForContext(inputContext) {
         for (const actionIdString of BZ_KEYS_TO_ADD) {
             const actionId = Input.getActionIdByName(actionIdString);
