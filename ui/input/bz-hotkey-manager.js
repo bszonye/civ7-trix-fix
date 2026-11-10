@@ -1,4 +1,5 @@
 import HotkeyManager from '/core/ui/input/hotkey-manager.js';
+import { InputHandlerState } from '/core/ui/input/input-support.js';
 
 const HM_handleInput = HotkeyManager.handleInput;
 HotkeyManager.handleInput = function(...args) {
@@ -9,7 +10,7 @@ HotkeyManager.handleInput = function(...args) {
         switch (name) {
             case "bz-reload-ui":
                 UI.reloadUI();
-                return false;
+                return InputHandlerState.Handled;
         }
     }
     // default handler

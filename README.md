@@ -1,9 +1,9 @@
-# Trixie’s Fixes 1.4.2
-fixes and workarounds for game update 1.4.2
+# Trixie’s Fixes 1.5.1
+fixes and workarounds for game update 1.5.1
 
 ## changes
 gameplay fixes
-- Mikasa and Revenge units: align Tier 3 stats with Battleship
+- TODO
 
 debugging tools
 - Reload UI hotkey (Ctrl+R)
